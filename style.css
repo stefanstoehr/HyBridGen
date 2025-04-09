@@ -87,5 +87,6 @@ footer {
     grid-area: footer;
     background: violet;
     font-size: 1fr;
-    position: absolute;
+    position: fixed;
+    bottom: 0;
 }
