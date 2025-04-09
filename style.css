@@ -44,49 +44,40 @@ html, body {
 header {
     grid-area: header;
     background: blue;
-    font-size: 1fr;
 }
 
 preview {
     grid-area: preview;
     background: green;
-    font-size: 1fr;
 }
 
 viewer {
     grid-area: viewer;
     background: yellow;
-    font-size: 1fr;
 }
 
 map {
     grid-area: map;
     background: red;
-    font-size: 1fr;
 }
 
 comments {
     grid-area: comments;
     background: orange;
-    font-size: 1fr;
 }
 
 psets {
     grid-area: psets;
     background: purple;
-    font-size: 1fr;
 }
 
 ai {
     grid-area: ai;
     background: pink;
-    font-size: 1fr;
 }
 
 footer {
     grid-area: footer;
     background: violet;
-    font-size: 1fr;
-    position: fixed;
     bottom: 0;
 }
