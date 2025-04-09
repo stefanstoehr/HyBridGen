@@ -1,0 +1,91 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    font-size: max(1rem);
+}
+
+.container { 
+    height: 100vh; 
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-rows: 5% 30% 30% 30% 5%; 
+    grid-template-columns: 50% 50%; 
+    grid-template-areas:  
+    "header header" 
+    "preview viewer"
+    "map comments" 
+    "psets ai"
+    "footer footer"
+  ;
+} 
+
+@media screen and (min-width: 44.001em) { 
+    .container {
+        height:100vh; 
+        display: grid;
+        margin: 0;
+        padding: 0;
+        grid-template-rows: 5% 45% 45% 5%; 
+        grid-template-columns: 1fr 1fr 1fr;; 
+        grid-template-areas:  
+            "header header header" 
+            "preview viewer map"
+            "comments psets ai"
+            "footer footer footer" 
+        ;
+    } 
+}
+
+header {
+    grid-area: header;
+    background: blue;
+    font-size: 1fr;
+}
+
+preview {
+    grid-area: preview;
+    background: green;
+    font-size: 1fr;
+}
+
+viewer {
+    grid-area: viewer;
+    background: yellow;
+    font-size: 1fr;
+}
+
+map {
+    grid-area: map;
+    background: red;
+    font-size: 1fr;
+}
+
+comments {
+    grid-area: comments;
+    background: orange;
+    font-size: 1fr;
+}
+
+psets {
+    grid-area: psets;
+    background: purple;
+    font-size: 1fr;
+}
+
+ai {
+    grid-area: ai;
+    background: pink;
+    font-size: 1fr;
+}
+
+footer {
+    grid-area: footer;
+    background: violet;
+    font-size: 1fr;
+    position: absolute;
+}
